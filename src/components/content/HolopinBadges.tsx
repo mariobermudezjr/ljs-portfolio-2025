@@ -9,21 +9,13 @@ const HolopinBadges: React.FC = () => (
   <AnimationContainer customClassName="w-full mt-16">
     <div className="flex flex-col gap-5">
       <SectionHeader
-        title="Holopin Badges"
-        content="    These badges represent my involvement in open-source projects and my contributions to the software
-        development community. I actively engage with repositories on GitHub and other platforms, where I contribute
-        code, documentation, and support for open-source tools."
+        title="Project Management Institute"
+        content="    These achievements represent my involvement in PMI projects and my contributions to the professional
+        PM community. I actively engage with students on PMI and other platforms, where I contribute
+        mentorship, feedback, and support for new members."
       />
 
-      <Link href={`https://holopin.io/@${siteConfig.social.holopin}`}>
-        <Image
-          src={`https://holopin.me/${siteConfig.social.holopin}`}
-          alt={`${siteConfig.author}'s Holopin Badges`}
-          className="mx-auto mb-12"
-          width={800}
-          height={400}
-        />
-      </Link>
+
     </div>
   </AnimationContainer>
 );

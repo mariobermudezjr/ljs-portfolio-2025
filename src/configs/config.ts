@@ -14,15 +14,12 @@ export const siteConfig: {
     linkedin: string;
     blog: string;
     medium: string;
-    dev: string;
-    hashnode: string;
     discord: string;
     github_organisation: string;
     daily_dev: {
       username: string;
       card: string;
     };
-    holopin: string;
   };
   other: {
     hacktoberfest: string;
@@ -41,36 +38,33 @@ export const siteConfig: {
     type: string;
   };
 } = {
-  baseUrl: 'https://muhammadfiaz.com',
-  author: 'Muhammad Fiaz',
-  author_surname: 'Fiaz',
-  titlePrefix: 'Muhammad Fiaz',
+  baseUrl: 'https://www.ljsartika.com/',
+  author: 'Lasria Joynetta Sartika',
+  author_surname: 'Sartika',
+  titlePrefix: 'Lasria Joynetta Sartika',
   profile_image:
-    'https://avatars.githubusercontent.com/u/75434191?s=400&u=0aa88e4ae941c44425b2be4595cf92b68f578f8a&v=4',
+    'https://media.licdn.com/dms/image/v2/D5603AQEVfZ617SWqxQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1704687622883?e=1744243200&v=beta&t=8eAuxCknbP6d3-AlJy-xChhF79efe8I9MzZYBXwtE8c',
   form_id: 'https://formspree.io/f/myzynpbr',
   social: {
     kofi: 'https://ko-fi.com/muhammadfiaz',
-    sponsor: 'https://github.com/sponsors/muhammad-fiaz',
-    email: 'contact@muhammadfiaz.com',
-    twitter: '@muhammadfiaz_',
-    github: 'muhammad-fiaz',
-    linkedin: 'https://www.linkedin.com/in/muhammad-fiaz-/',
-    blog: 'https://articles.muhammadfiaz.com',
-    medium: 'https://muhammad-fiaz.medium.com',
-    dev: 'https://dev.to/muhammadfiaz',
-    hashnode: 'https://muhammadfiaz.hashnode.dev',
+    sponsor: 'https://ljsartika.medium.com/',
+    email: 'ljsartika@gmail.com',
+    twitter: '@ljsartika',
+    github: 'https://github.com/LJSartika',
+    linkedin: 'https://www.linkedin.com/in/ljsartika/',
+    blog: 'https://www.ljsartika.com/',
+    medium: 'https://ljsartika.medium.com/',
     discord: 'https://discord.gg/mXMhy2EX',
     github_organisation: 'https://github.com/FiazTechnologies',
     daily_dev: {
       username: 'muhammadfiaz',
       card: 'https://api.daily.dev/devcards/v2/JVyK3ICBzKPdM0rcDj1o4.png?type=wide&r=vde'
-    },
-    holopin: 'muhammadfiaz'
+    }
   },
   metadata: {
-    description: `Hi! I'm Muhammad Fiaz, a Full Stack developer passionate about building apps, exploring AI and ML, and collaborating on exciting projects. Let's connect!`,
+    description: `Hi! I'm Lasria Joynetta Sartika, a Project Management Trainee exploring project management, sharing insights on growth, productivity, and the lessons I've learned along the way. Continuous learning after all. Let's connect!`,
     keywords:
-      'Muhammad Fiaz, Full Stack Developer, Muhammad Fiaz portfolio, Muhammad Fiaz GitHub, Web Development, Mobile Applications, Machine Learning, Artificial Intelligence, Programming Languages, Open Source Developer, App Development',
+      'Lasria Joynetta Sartika, Project Management, Lasria Joynetta Sartika portfolio, Lasria Joynetta Sartika GitHub, PMI, Visualization, Construction, Interior Design, Project Engineer, Medium Writter, ChatGPT',
     type: 'website'
   },
   chatbot: {

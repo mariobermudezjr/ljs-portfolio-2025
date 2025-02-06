@@ -10,7 +10,7 @@ const AboutMe = () => {
       <SectionHeader
         id="aboutme"
         title="About Me"
-        content={`Here is a little bit about me and my journey as a developer.`}
+        content={`Here is a little bit about me and my journey as a PMI professional.`}
       />
 
       <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white">
@@ -18,33 +18,35 @@ const AboutMe = () => {
         <strong className="text-foreground dark:text-white">
           {siteConfig.author}
         </strong>
-        , and I've been passionate about coding since I was a child. I fell in
-        love with programming at a young age, spending countless hours learning,
-        experimenting, and creating small projects. Over the years, this passion
-        has grown into a career as a Full Stack developer, where I continue to
-        build innovative solutions that solve real-world problems.
+        , a Project Management Professional (PMI) with a passion for 
+        delivering impactful projects and creating solutions that drive results. My journey began with 
+        a keen interest in coordinating tasks and solving complex problems, and over the years, this 
+        passion has transformed into a fulfilling career in project management.
+
       </p>
 
       <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white mt-4">
-        As I’ve evolved in my career, I’ve expanded my expertise into new areas
-        like Machine Learning (ML) and Artificial Intelligence (AI), diving deep
-        into neural networks and other cutting-edge technologies. But no matter
-        how much I learn, I always keep that same excitement and curiosity I had
-        as a child, exploring new fields and technologies that push the
-        boundaries of what’s possible.
+      Throughout my experience, I’ve had the opportunity to assist in managing diverse projects, 
+      including collaborating with multinational corporations like Schindler, known for their 
+      safety innovation and global impact in the elevator industry. My role involved ensuring 
+      project timelines, safety standards, and deliverables were met while fostering effective 
+      communication between stakeholders across different regions.
       </p>
 
       <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white mt-4">
-        Today, I’m not just focused on building apps and websites; I’m also
-        exploring DevOps tools like Docker, Kubernetes, and AWS to optimize and
-        scale my projects. I believe in continuous learning and growth, and I’m
-        always looking for new challenges that help me expand my skills.
+      I’ve also worked on projects within the FinTech sector, collaborating with FinanSys in 
+      London to help streamline project execution and support business-critical operations. 
+      Whether it’s managing internal systems or improving cross-functional team workflows, 
+      I focus on ensuring every milestone is met while keeping quality and efficiency top of mind.
       </p>
 
       <p className="text-sm sm:text-base md:text-lg text-foreground dark:text-white mt-4">
-        If you’re interested in collaborating on something exciting or need help
-        with a project, feel free to reach out. Let’s create something amazing
-        together!
+      As a certified PMI professional (CAPM), I’m dedicated to continuous learning and growth. 
+      I’ve honed my skills in project planning, resource allocation, risk management, and stakeholder engagement. 
+      From using collaborative tools like Trello to overseeing multiple projects simultaneously, 
+      I thrive in dynamic environments that require strategic planning and adaptability.
+      If you’re looking for a project management partner to help turn ideas into successful outcomes, 
+      let’s connect. I’m excited to collaborate and bring value to your next big project!
       </p>
     </AnimationContainer>
   );
