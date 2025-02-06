@@ -1,11 +1,6 @@
 'use client';
 export function validateEnvVars() {
-  const requiredEnvVars = [
-    'GITHUB_TOKEN',
-    'GITHUB_SECRET',
-    'GITHUB_ID',
-    'GEMINI_API_KEY'
-  ];
+  const requiredEnvVars = ['GITHUB_SECRET', 'GITHUB_ID', 'GEMINI_API_KEY'];
 
   // Check if all required environment variables are set
   requiredEnvVars.forEach((envVar) => {
@@ -26,7 +21,6 @@ export function validateEnvVars() {
 
 export function getEnvVars() {
   return {
-    GITHUB_TOKEN: process.env.GITHUB_TOKEN,
     GITHUB_SECRET: process.env.GITHUB_SECRET,
     GITHUB_ID: process.env.GITHUB_ID,
     GEMINI_API_KEY: process.env.GEMINI_API_KEY,
