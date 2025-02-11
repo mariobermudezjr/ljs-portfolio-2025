@@ -4,29 +4,14 @@ import Image from 'next/image';
 
 // SVG paths if placed in the public folder
 const skills = [
-    {
-        name: 'Drop Box',
-        iconPath: '/icons/dropbox.svg',
-    },
-    {
-        name: 'Google Drive',
-        iconPath: '/icons/google-drive.svg',
-    },
-    {
-        name: 'Google Sheets',
-        iconPath: '/icons/google-sheets.svg',
-    },
-    {
-        name: 'Jira',
-        iconPath: '/icons/jira.svg',
-    },
+
     {
         name: 'Microsoft Excel',
         iconPath: '/icons/ms-excel.svg',
     },
     {
-        name: 'Microsoft Onenote',
-        iconPath: '/icons/ms-onenote.svg',
+        name: 'Microsoft Outlook',
+        iconPath: '/icons/outlook.svg',
     },
     {
         name: 'Microsoft Powerpoint',
@@ -41,12 +26,8 @@ const skills = [
         iconPath: '/icons/ms-word.svg',
     },
     {
-        name: 'Notion',
-        iconPath: '/icons/notion.svg',
-    },
-    {
-        name: 'Microsoft Outlook',
-        iconPath: '/icons/outlook.svg',
+        name: 'Microsoft Onenote',
+        iconPath: '/icons/ms-onenote.svg',
     },
     {
         name: 'Microsoft Power BI',
@@ -57,8 +38,32 @@ const skills = [
         iconPath: '/icons/trello.svg',
     },
     {
+        name: 'Notion',
+        iconPath: '/icons/notion.svg',
+    },
+    {
+        name: 'Google Sheets',
+        iconPath: '/icons/google-sheets.svg',
+    },
+    {
+        name: 'Canva',
+        iconPath: '/icons/canva.svg',
+    },
+    {
+        name: 'Drop Box',
+        iconPath: '/icons/dropbox.svg',
+    },
+    {
+        name: 'Google Drive',
+        iconPath: '/icons/google-drive.svg',
+    },
+    {
         name: 'Zoom',
         iconPath: '/icons/zoom.svg',
+    },
+    {
+        name: 'Jira',
+        iconPath: '/icons/jira.svg',
     },
 ];
 
