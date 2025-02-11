@@ -5,6 +5,8 @@ import AnimationContainer from '@/src/components/utils/AnimationContainer';
 import SectionHeader from '@/src/components/ui/SectionHeader';
 import React from 'react';
 
+import SkillsIcon from '../content/SkillsIcons';  // Adjust this if your directory structure is different
+
 const MySkills = () => {
   return (
     <AnimationContainer customClassName="w-full mt-16">
@@ -13,18 +15,8 @@ const MySkills = () => {
           title="Skills"
           content="I’ve been managing projects for over 4 years, gaining experience across various industries, methodologies, and tools. I’ve worked on projects involving both operational execution and strategic planning, allowing me to understand and contribute to the entire project lifecycle—from initiation to closure."
         />
+        <SkillsIcon />
 
-        <div className="w-full flex flex-col gap-8">
-          <div className="w-full flex justify-center items-center">
-            <Image
-              src="https://skillicons.dev/icons?i=notion,linkedin,gmail,apple&perline=15"
-              alt="My Skills"
-              className="relative w-full h-full max-w-3xl"
-              width={500}
-              height={500}
-            />
-          </div>
-        </div>
       </div>
     </AnimationContainer>
   );
