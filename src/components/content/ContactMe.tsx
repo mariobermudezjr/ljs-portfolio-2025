@@ -4,16 +4,33 @@ import AnimationContainer from '../utils/AnimationContainer';
 import { siteConfig } from '@/src/configs/config';
 import { Input, Textarea, Button } from '@nextui-org/react';
 import SectionHeader from '@/src/components/ui/SectionHeader';
+import {sendEmail} from '../utils/SendEmail'
+
 
 const ContactMe = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [number, setPhone] = useState('');
+  const [message, setMessage] = useState('');
   const [isWaiting, setIsWaiting] = useState(false);
   const [waitTime, setWaitTime] = useState(0); // In seconds
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const [result, setResult] = useState<string | null>(null);
+
+
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("number", number);
+    formData.append("message", message);
+  
+    const response = await sendEmail(formData);
+    //setResult(response.success ? "Sent!" : response.error);
 
     // Check if user is trying to send an email before the ratelimit window is up
     const lastSubmittedTime = sessionStorage.getItem('lastSubmittedTime');
@@ -103,6 +120,8 @@ const ContactMe = () => {
                   label="Phone"
                   placeholder="Phone"
                   type="tel"
+                  value={number}
+                  onChange={(e) => setPhone(e.target.value)}
                   required
                 />
               </div>
@@ -114,6 +133,8 @@ const ContactMe = () => {
                 label="Message"
                 placeholder="Message"
                 rows={4}
+                value={message}
+                onChange={(e) => setMessage(e.target.value)}
                 required
               />
             </div>
@@ -121,6 +142,7 @@ const ContactMe = () => {
             <Button
               type="submit"
               className="flex items-center justify-center rounded-xl px-5 py-3 text-white dark:text-black bg-black dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-200 shadow-sm transition ease mx-auto"
+              
             >
               <span className="font-medium text-base">Send</span>
 
